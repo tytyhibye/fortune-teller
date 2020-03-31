@@ -1,21 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
-  <link rel="stylesheet" href="css/styles.css" type="text/css">
-  <script src="js/jquery-3.4.1.js"></script>
-  <script src="js/scripts.js"></script>
-  <title>Fortune Teller</title>
-</head>
-<body>
-  <div class="container">
-    <form id="survey">
-
-      
-
-    </form>
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Fortune Teller</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <hi>Fortune Teller</hi>
+      </div>
+      <h3>Check all that apply to receive your fortune</h3>
+      <form id="survey">
+        <div class="unlucky">
+          <p>Unlucky things that have happenened to you:</p>
+          <input type="checkbox" name="unlucky-stuff" value="cat">Saw a black cat<br>
+          <input type="checkbox" name="unlucky-stuff" value="ladder">walked under a ladder<br>
+          <input type="checkbox" name="unlucky-stuff" value="mirror">Broke a mirror<br>
+          <input type="checkbox" name="unlucky-stuff" value="ouija">Accidentally summoned a demon<br>
+        </div>
+        <br>
+        <br>
+        <div class="lucky">
+          <p>Lucky things that have happened to you:</p>
+          <input type="checkbox" name="lucky-stuff" value="dollar">Found a dollar<br>
+          <input type="checkbox" name="lucky-stuff" value="poop">Dodged bird poop<br>
+          <input type="checkbox" name="lucky-stuff" value="hair">Woke up like this<br>
+          <input type="checkbox" name="lucky-stuff" value="covid">Didn't get COVID<br>
+        </div>
+        <br>
+        <button type="submit" class="btn btn-animated">Tell me my fortune</button>
+      </form>
+        <br>
+        <span id="bad">
+          <h3><b>You're Doomed!</b></h3>
+          <p>treachery and terrible news around every turn, you might as well stay in.</p>  
+        </span>
+        <br>
+        <span id="good">
+          <h3><b>You lucky son of a gun!</b></h3>
+          <p>Go to vegas, now.</p>
+        </span>
+    </div>
+  </body>
 </html>
